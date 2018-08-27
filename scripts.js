@@ -5,10 +5,10 @@ const p = document.querySelector('p.description');
 const button = document.querySelector('button.description');
 
 toggleList.addEventListener('click', () => { //when the toggle is clicked:
-  if (listDiv.style.display == 'none') {
-    toggleList.textContent = 'Hide list';
-    listDiv.style.display = 'block';
-  } else {
+  if (listDiv.style.display == 'none') { //if the Div with class list is set to NONE:
+    toggleList.textContent = 'Hide list'; //changes button text depending on status
+    listDiv.style.display = 'block'; //change the display style to "block"
+  } else {  // else change the display to "none"
     toggleList.textContent = 'Show list';                        
     listDiv.style.display = 'none';
   }                         
