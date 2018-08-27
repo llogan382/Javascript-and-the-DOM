@@ -4,7 +4,7 @@ const input = document.querySelector('input.description');
 const p = document.querySelector('p.description');
 const button = document.querySelector('button.description');
 
-toggleList.addEventListener('click', () => {
+toggleList.addEventListener('click', () => { //when the toggle is clicked:
   if (listDiv.style.display == 'none') {
     toggleList.textContent = 'Hide list';
     listDiv.style.display = 'block';
