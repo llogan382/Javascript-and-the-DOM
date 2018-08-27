@@ -22,7 +22,9 @@ descriptionButton.addEventListener('click', () => {
 });
 
 addItemButton.addEventListener('click', () => {
+    let ul = document.getElementsByTagName('ul')[0];//this returns a COLLECTION; since there is only 1 item, we can access it with [0]
     let li = document.createElement('li');
     li.textContent = addItemInput.value;
+    ul.appendChild(li);
 });
 
