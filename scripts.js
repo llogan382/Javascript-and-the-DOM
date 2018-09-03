@@ -6,15 +6,17 @@ const descriptionButton = document.querySelector('button.description');
 const addItemInput = document.querySelector('input.addItemInput');
 const addItemButton = document.querySelector('Button.addItemButton');
 const removeItemButton = document.querySelector('button.removeItemButton');
-const listItems = document.getElementsByTagName('li')[0];
+const listItems = document.getElementsByTagName('li');
 
-//functionname(created above).function('what to listen for', callback function)
-listItems.addEventListener('mouseover', () => {
-    listItems.textContent = listItems.textContent.toUpperCase();
-})
-listItems.addEventListener('mouseout', () => {
-    listItems.textContent = listItems.textContent.toLocaleLowerCase();
-})
+for (let i=0; i< listItems.length; i += 1 ) {
+    //functionname(created above).function('what to listen for', callback function)
+    listItems[i].addEventListener('mouseover', () => {
+        listItems[i].textContent = listItems[i].textContent.toUpperCase();
+    })
+    listItems[i].addEventListener('mouseout', () => {
+        listItems[i].textContent = listItems[i].textContent.toLocaleLowerCase();
+    })
+}
 
 toggleList.addEventListener('click', () => { //when the toggle is clicked:
   if (listDiv.style.display == 'none') { //if the Div with class list is set to NONE:
