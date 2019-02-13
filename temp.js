@@ -1,9 +1,5 @@
 
 
-function exec(func, arg ) {
-    func(arg);
-}
-
-exec((something) => {
+window.setTimeout((something) => {
     console.log(something);
-}, "hi there");
+}, 3000, "My delayed String");
