@@ -1,0 +1,17 @@
+.logo{
+    height:61px;
+}
+
+.hidden{
+display: none;
+}
+
+.displayed{
+    position: relative;
+    background-color: aliceblue;
+    z-index: 9;
+}
+
+.hovered{
+    background: green;
+}
