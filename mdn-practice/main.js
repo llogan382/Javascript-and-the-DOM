@@ -14,19 +14,42 @@ const allClicks = document.querySelectorAll('.container');
 // }
 
 document.querySelectorAll('.container').forEach(item => {
+
+
+
+
     item.addEventListener('mouseover', event => {
-        event.target.style.color = "green";
+
+        var outer = event.target.closest("div.outer");
+        var inner = event.target.closest("div.inner");
+        // event.target.classList.add('sec-hover');
+
+        if(event.target.classList.value.includes("outer") ||event.target.classList.value.includes("inner")  ){
+
+            event.target.classList.add('parent-dropdown');
+            // console.log('hello');
+        }
+
+
     })
     item.addEventListener('mouseout', event => {
-        event.target.style.color = "black";
+        event.target.classList.remove('parent-dropdown');
+
     })
 
     item.addEventListener('click', event => {
         // console.log(event.target);
-        var showThis = event.target.closest("div.container").children[1];
+        var showThis = event.target.closest("div").children[1];
+        var removeClip = event.target.closest("div.container");
+
+
+
         if (showThis) {
             showThis.classList.toggle('hidden');
+            removeClip.style.clipPath = "none";
         }
         // showThis.classList.toggle("hidden");
     })
 })
+
+// Refine the outer and the inner

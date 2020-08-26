@@ -1,17 +1,72 @@
+body{
+    background-color: aqua;
+}
+
 .logo{
     height:61px;
 }
 
-.hidden{
-display: none;
+.container{
+    display: inline-block;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-color: white;
+
+    box-sizing: border-box;
+    clip-path: polygon(0% 0%, 50% 0%, 50% 10%, 0% 10%);
+    /* clip-path: polygon(0% 0%, 50% 0%, 50% 10%, 100% 10%, 100% 100%, 0% 100%); */
+    z-index: 99;
 }
+
+.parent-dropdown{
+    /* background-color: #dfe1e9; */
+    background-color: white;
+
+    clip-path: polygon(0% 0%, 50% 0%, 50% 10%, 100% 10%, 100% 100%, 0% 100%);
+
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 29.5% 80%, 24% 100%, 18.5% 80%, 0% 80%)!important; */
+
+}
+.inner{
+    position: absolute;
+    top: 1%; /* equal to border thickness */
+    left: 1%; /* equal to border thickness */
+    width: 98%;
+    height: 95%;
+    background-color: #eff0f2;
+    clip-path: polygon(0% 0%, 50% 0%, 50% 10%, 0% 10%);
+
+
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 28.5% 80%, 23.5% 100%, 18.5% 80%, 0% 80%) !important; */
+}
+.section {
+
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0 80%);
+    z-index: 9;
+    position: relative;
+    border-right: 5px solid white;
+  }
+
+
+    .hidden{
+    display: none;
+    }
 
 .displayed{
-    position: relative;
-    background-color: aliceblue;
-    z-index: 9;
+    z-index: 9999;
+    top: 23px;
+    position: absolute;
+    height: 400px;
+    width: 100%;
 }
 
-.hovered{
-    background: green;
-}
+
+/* On hover, clip container to: polygon(0% 0%, 50% 0%, 50% 10%, 100% 10%, 100% 100%, 0% 100%) */
+
+/* Default: clip;
+On hover, clip different;
+
+
+
+*/
