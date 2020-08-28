@@ -1,0 +1,74 @@
+.mdn-intl-contact-cont{
+    font-family: proxima-nova, sans-serif;
+    font-size: 16px;
+    color: #002554;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-gap: 50px;
+    line-height: 1;
+}
+.mdn-intl-country{
+    font-weight: bold;
+    font-size: 18px;;
+    grid-area: country;
+    padding-left: 14%;
+    align-self: end;
+}
+.intl-info{
+    grid-area: info;
+    padding-left: 14%;
+}
+.intl-contact{
+    grid-area: contact;
+    padding-left: 1em;
+}
+div.intl-contact > div{
+    font-weight: bold;
+}
+
+.mdn-intl-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 130px;
+    grid-template-areas:
+    "country ."
+    "info contact";
+    grid-gap: 1em;
+    background-color: #EFF0F2;
+    border-right: 20px solid #EFF0F2;
+}
+
+div.intl-form button {
+    border: 1px solid #002554;
+    padding: 8px 40px;
+    color: #ffffff;
+    border-width: 1px!important;
+    border-radius: 10px;
+    font-size: 19px;
+    font-family: 'Sentinel',Helvetica,Arial,Lucida,sans-serif!important;
+    box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.3);
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    display:inline-block;
+}
+
+/* #foodservice-tabs .cta-button{
+    border: 1px solid #002554;
+    padding: 8px 40px;
+    color: #ffffff;
+    border-width: 1px!important;
+    border-radius: 10px;
+    font-size: 19px;
+    font-family: 'Sentinel',Helvetica,Arial,Lucida,sans-serif!important;
+    box-shadow: 1px 3px 8px 0px rgba(0,0,0,0.3);
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    display:inline-block;
+  } */
+
+  #foodservice-tabs .cta-button:hover{
+    border-color: #002554;
+    cursor: pointer;
+    color: #002554;
+    background-color: #EFF0F2!important;
+  }
