@@ -1,0 +1,67 @@
+
+.container{
+    display: flex;
+}
+.item1{
+    height: 100px;
+    width: 380px;
+    border: 2px solid green;
+    background-color: #dfe1e9;
+
+
+}
+.item1:hover{
+    height: 150px;
+
+    clip-path: polygon(22.52% 83.37%, -1.19% 82.08%, 0% 0%, 92.86% 0.65%, 94.05% 83.77%, 55.95% 83.12%, 38.09% 98.7%);
+}
+.hidden1{
+    display: none;
+}
+.item1:hover ~ .hidden1{
+    display: block;
+}
+.expanded{
+    height: 100px;
+    clip-path: polygon(5.87% 5.37%, 9.64% 38.08%, 14.81% 5%, 92.86% 0.65%, 92.93% 83.77%, -0.32% 89.12%, -0.24% 3.7%);
+    position: absolute;
+    top: 138px;
+}
+
+.item2{
+    height: 100px;
+    width: 380px;
+    border: 2px solid green;
+    background-color: #dfe1e9;
+
+
+}
+.item2:hover{
+    height: 150px;
+
+    clip-path: polygon(22.52% 83.37%, -1.19% 82.08%, 0% 0%, 92.86% 0.65%, 94.05% 83.77%, 55.95% 83.12%, 38.09% 98.7%);
+}
+.hidden2{
+    display: none;
+}
+.item2:hover ~ .hidden2{
+    display: block;
+}
+.expanded2{
+    height: 100px;
+    clip-path: polygon(32.99% 3.37%, 37.18% 36.08%, 42.49% 6%, 92.86% 0.65%, 92.93% 83.77%, -0.32% 89.12%, -0.24% 3.7%);
+    position: absolute;
+    top: 138px;
+}
+/* .item1:hover{
+    height: 150px;
+    clip-path: polygon(22.52% 83.37%, -1.19% 82.08%, 0% 0%, 92.86% 0.65%, 94.05% 83.77%, 55.95% 83.12%, 38.09% 98.7%);
+} */
+/* .item1:hover ~ .hidden1{
+    display: block;
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    border: 2px solid red;
+    background-color: #dfe1e9;
+} */
